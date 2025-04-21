@@ -1,0 +1,13 @@
+<h1>Convert <%= @original_currency %></h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+  <%@currency_list.each do |a_currency|%>
+    <li>
+      <a href="/<%= @original_currency %>/<%= a_currency %>">
+        Convert 1 <%= @original_currency %> to <%= a_currency %>...
+      </a>
+    </li>
+  <% end %>
+</ul>
